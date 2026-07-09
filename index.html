@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aryan Ashraf — Computer Engineering Student &amp; Software Developer</title>
+  <meta name="description" content="Portfolio of Aryan Ashraf, an incoming 4th-year Computer Engineering student at the University of Guelph. Full-stack and applied-ML developer — co-op experience, LLM agent systems, and co-founder of Bridge.">
+  <meta property="og:title" content="Aryan Ashraf — Computer Engineering Student &amp; Software Developer">
+  <meta property="og:description" content="Full-stack and applied-ML developer with co-op experience building customer-facing platforms, REST APIs, and LLM agent systems. Co-founder of Bridge.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/fonts/BricolageGrotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="#top">Aryan&nbsp;Ashraf</a>
+
+      <!-- Hidden until JS adds .js to <html>; without JS the nav list is always visible. -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#extracurricular">Extracurricular</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Hero ===== -->
+    <section id="top" class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <p class="hero__kicker">Computer Engineering student &amp; software developer</p>
+        <h1 id="hero-heading">Aryan <span class="hero__accent">Ashraf</span></h1>
+        <svg class="hero__squiggle" viewBox="0 0 220 14" fill="none" aria-hidden="true">
+          <path d="M2 9c14-7 24-7 36 0s24 7 36 0 24-7 36 0 24 7 36 0 24-7 36 0 24 7 36 0"
+                stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+        <p class="hero__lede">
+          Incoming 4th-year Computer Engineering (Honours) student at the University of
+          Guelph, starting September 2026. Full-stack and applied-ML developer with co-op
+          experience building customer-facing platforms, REST APIs, and LLM agent systems.
+          Interested in AI, cloud infrastructure, and software that solves real problems.
+        </p>
+        <ul class="hero__actions">
+          <li><a class="button button--primary" href="assets/Ashraf_Aryan_F26.pdf" download>Download résumé <span class="visually-hidden">(PDF)</span></a></li>
+          <li><a class="button" href="https://www.linkedin.com/in/aryanaashraf/" rel="noopener">LinkedIn</a></li>
+          <!-- TODO: add Aryan's personal GitHub profile link here when confirmed.
+               Do NOT use github.com/alyanany97 — that is a teammate's account. -->
+          <li><a class="button" href="mailto:aashra02@uoguelph.ca">Email</a></li>
+        </ul>
+      </div>
+      <span class="hero__scroll-hint" aria-hidden="true">↓</span>
+    </section>
+
+    <!-- Decorative tech ticker; content duplicated for a seamless loop -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>React ✦ TypeScript ✦ Python ✦ FastAPI ✦ .NET ✦ TensorFlow ✦ Firebase ✦ Docker ✦ Cloud Run ✦ LLM Agents ✦&nbsp;</span>
+        <span>React ✦ TypeScript ✦ Python ✦ FastAPI ✦ .NET ✦ TensorFlow ✦ Firebase ✦ Docker ✦ Cloud Run ✦ LLM Agents ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <p class="section__num" aria-hidden="true">01</p>
+        <h2 id="about-heading">About</h2>
+        <p class="section__intro">
+          I'm a Computer Engineering student who likes building things end to end — from
+          React front ends and .NET back ends to computer-vision models and LLM agent
+          systems. My work spans professional software development, assistive-device
+          research, and a hackathon startup I co-built to connect surplus resources with
+          the people who need them.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <p class="section__num" aria-hidden="true">02</p>
+        <h2 id="experience-heading">Experience</h2>
+
+        <article class="card card--featured" aria-labelledby="exp-bridge-heading">
+          <header class="card__header">
+            <h3 id="exp-bridge-heading">Bridge — Co-Founder &amp; Full-Stack Developer</h3>
+            <p class="card__meta">
+              <span class="badge">Featured · Startup</span>
+              Hackathon project, deployed and live
+            </p>
+          </header>
+          <p>
+            A peer-to-peer platform that connects people with surplus food and clothing to
+            nearby people who need it, with volunteer drivers handling delivery — no
+            centralized drop-off, no fixed hours.
+          </p>
+          <ul>
+            <li>
+              Three roles keep the flow simple: <strong>helpers</strong> post donations,
+              <strong>people in need</strong> browse and request items, and
+              <strong>drivers</strong> accept nearby deliveries on demand. Each match gets a
+              live delivery tracker and a shared in-app chat, so no one has to exchange
+              phone numbers.
+            </li>
+            <li>
+              Cut the biggest friction in donating — listing what you have — by letting
+              helpers photograph an item and using Gemini Vision
+              (<code>gemini-2.5-flash</code>) to auto-generate a structured list of item
+              names, quantities, and sizes. Turns a 2-minute chore into a ~10-second photo.
+            </li>
+            <li>
+              <strong>Stack:</strong> React 18 + TypeScript + Vite front end; FastAPI on
+              Cloud Run (Python 3.11) back end; Firestore database; Firebase Auth (Google
+              sign-in), Storage, and Hosting; Leaflet + OSRM for maps and routing,
+              Nominatim for geocoding; CI/CD via GitHub Actions.
+            </li>
+          </ul>
+          <p class="card__links">
+            <a href="https://helper-495902.web.app" rel="noopener">Visit the live site</a> ·
+            <a href="https://github.com/alyanany97/bridge" rel="noopener">Team repository on GitHub</a>
+          </p>
+        </article>
+
+        <article class="card" aria-labelledby="exp-brock-heading">
+          <header class="card__header">
+            <h3 id="exp-brock-heading">Brock Solutions — Software Developer</h3>
+            <p class="card__meta">Kitchener, ON · April 2026 – Present</p>
+            <p class="card__tags">TypeScript · React · C# · .NET · LLM Agents</p>
+          </header>
+          <ul>
+            <li>Built REST APIs with token-based authentication and account-scoped filtering for a customer-facing case-management portal.</li>
+            <li>Delivered a full-stack support module with a .NET back end and a React UI featuring cascading, context-aware dropdowns.</li>
+            <li>Wrote an integration test suite covering auth, access-control, and entity validation against the live development environment.</li>
+            <li>Built a multi-agent LLM system with an orchestrator–subagent architecture grounded on internal repositories to automate cross-repo analysis and planning.</li>
+          </ul>
+        </article>
+
+        <article class="card" aria-labelledby="exp-uog-heading">
+          <header class="card__header">
+            <h3 id="exp-uog-heading">University of Guelph — ML &amp; Assistive Devices Research Assistant</h3>
+            <p class="card__meta">Guelph, ON · April 2025 – September 2025</p>
+            <p class="card__tags">C · C# · SQL · Firestore</p>
+          </header>
+          <ul>
+            <li>Supported a VR mirror-therapy app by debugging and extending C# logic in Unity and managing a Firestore back end for patient session and movement data.</li>
+            <li>Debugged and maintained Arduino (C) firmware for a smart rehabilitation glove, integrating sensors and real-time control logic validated across 20+ participants.</li>
+            <li>Analyzed 100+ temperature-sensor readings for a diabetic-sock project using SQL and Excel, applying Isolation Forest anomaly detection to identify abnormal patterns.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="section__num" aria-hidden="true">03</p>
+        <h2 id="projects-heading">Projects</h2>
+
+        <div class="card-grid">
+          <article class="card" aria-labelledby="proj-ums-heading">
+            <header class="card__header">
+              <h3 id="proj-ums-heading">University Management System</h3>
+              <p class="card__tags">Java · JavaFX · SQL · Excel</p>
+            </header>
+            <ul>
+              <li>Designed a role-based university management system with separate admin and user access for managing subjects, courses, students, faculty, and events; collaborated on overall architecture and implementation.</li>
+              <li>Implemented authentication, scheduling, and reporting; integrated SQL databases and Excel-based data import for efficient storage, updates, and usability.</li>
+            </ul>
+          </article>
+
+          <article class="card" aria-labelledby="proj-asl-heading">
+            <header class="card__header">
+              <h3 id="proj-asl-heading">Real-Time ASL Detection</h3>
+              <p class="card__tags">Python · TensorFlow · YOLOv8 · LabelImg · Jupyter</p>
+            </header>
+            <ul>
+              <li>Built a real-time computer-vision system for American Sign Language detection achieving 85%+ accuracy, with predictions shown through a live video interface.</li>
+              <li>Prepared, annotated, and managed image datasets with LabelImg, creating structured train/test splits to support model training and validation.</li>
+            </ul>
+          </article>
+
+          <article class="card" aria-labelledby="proj-bridge-heading">
+            <header class="card__header">
+              <h3 id="proj-bridge-heading">Bridge</h3>
+              <p class="card__tags">React · TypeScript · FastAPI · Firebase · Gemini Vision</p>
+            </header>
+            <p>
+              A deployed peer-to-peer donation platform — my most complete full-stack work,
+              covered in detail under <a href="#experience">Experience</a>.
+            </p>
+            <p class="card__links">
+              <a href="https://helper-495902.web.app" rel="noopener">Live site</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <p class="section__num" aria-hidden="true">04</p>
+        <h2 id="skills-heading">Skills</h2>
+        <div class="skills-grid">
+          <div class="skills-group">
+            <h3>Languages</h3>
+            <ul class="pill-list">
+              <li>C</li><li>C++</li><li>Python</li><li>Java</li><li>SQL</li>
+              <li>TypeScript / React</li><li>.NET / C#</li><li>Firestore (NoSQL)</li>
+              <li>Ladder Diagram (PLC)</li><li>Structured Text (PLC)</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <h3>Frameworks &amp; Libraries</h3>
+            <ul class="pill-list">
+              <li>React</li><li>FastAPI</li><li>TensorFlow</li><li>YOLOv8</li><li>JavaFX</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <h3>Tools &amp; Platforms</h3>
+            <ul class="pill-list">
+              <li>Git</li><li>Docker</li><li>Firebase</li><li>Google Cloud Run</li>
+              <li>EPLAN</li><li>Rockwell Studio 5000</li><li>AutoCAD</li><li>Arduino</li>
+              <li>LabelImg</li><li>Jupyter</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <h3>Concepts</h3>
+            <ul class="pill-list">
+              <li>REST API design</li><li>Token-based auth</li>
+              <li>LLM agent architectures</li><li>Computer vision</li>
+              <li>Anomaly detection (Isolation Forest)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section id="education" class="section" aria-labelledby="education-heading">
+      <div class="container">
+        <p class="section__num" aria-hidden="true">05</p>
+        <h2 id="education-heading">Education</h2>
+        <article class="card" aria-labelledby="edu-uog-heading">
+          <header class="card__header">
+            <h3 id="edu-uog-heading">University of Guelph</h3>
+            <p class="card__meta">Bachelor of Engineering in Computer Engineering (Honours) · Guelph, ON · Expected May 2028</p>
+          </header>
+          <ul>
+            <li>Relevant coursework: Data Structures and Algorithms (C); Digital Systems Design (FPGA, VHDL, Vivado, logic circuits); Programming for Engineers (Java, C++).</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Extracurricular ===== -->
+    <section id="extracurricular" class="section" aria-labelledby="extracurricular-heading">
+      <div class="container">
+        <p class="section__num" aria-hidden="true">06</p>
+        <h2 id="extracurricular-heading">Extracurricular</h2>
+        <ul class="plain-list">
+          <li>
+            <h3>Islamic Relief at UofG</h3>
+            <p>Supported campus fundraising: created marketing content, coordinated charity events, and engaged students to raise awareness and funds for humanitarian causes.</p>
+          </li>
+          <li>
+            <h3>Focus On Engineering Guelph</h3>
+            <p>Helped organize engineering competitions and contributed to building and maintaining a textbook-rental website that improved resource accessibility for students.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Contact / Footer ===== -->
+  <footer id="contact" class="site-footer" aria-labelledby="contact-heading">
+    <div class="container">
+      <h2 id="contact-heading">Get in touch</h2>
+      <p>
+        The fastest way to reach me is by email. I'm happy to talk about internships,
+        new-grad roles, or anything I've built.
+      </p>
+      <ul class="contact-list">
+        <li><a href="mailto:aashra02@uoguelph.ca">aashra02@uoguelph.ca</a></li>
+        <li><a href="tel:+12263323297">226-332-3297</a></li>
+        <li><a href="https://www.linkedin.com/in/aryanaashraf/" rel="noopener">LinkedIn</a></li>
+        <!-- TODO: add personal GitHub link here when confirmed (not the teammate's alyanany97 account). -->
+        <li><a href="assets/Ashraf_Aryan_F26.pdf" download>Résumé <span class="visually-hidden">(PDF download)</span></a></li>
+      </ul>
+      <p class="site-footer__fineprint">© 2026 Aryan Ashraf · Hand-built with plain HTML &amp; CSS — no frameworks were harmed.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
