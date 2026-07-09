@@ -46,11 +46,11 @@ Targets WCAG 2.1 AA:
 - Heading font (Bricolage Grotesque) is self-hosted with `font-display: swap`
   and preloaded; body text uses the system font stack.
 
-## Before shipping (TODOs)
+## Remaining nice-to-haves
 
-- **Add Aryan's personal GitHub profile link** in the hero and footer —
-  marked with `TODO` comments in `index.html`. The Bridge repo
-  (`github.com/alyanany97/bridge`) is a teammate's account and is linked only
-  as the project repository, never as Aryan's profile.
-- Optional: add Bridge screenshots and a `bridge.html` case-study page.
-- Optional: add a headshot to the hero/about.
+- Add Bridge screenshots and a `bridge.html` case-study page.
+- Add a headshot to the hero/about.
+
+Note: the Bridge repo (`github.com/alyanany97/bridge`) is a teammate's
+account and is linked only as the project repository; Aryan's own profile is
+`github.com/Aryan-a-a`.
