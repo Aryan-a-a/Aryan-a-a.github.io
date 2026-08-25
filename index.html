@@ -71,8 +71,8 @@
     <!-- Decorative tech ticker; content duplicated for a seamless loop -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee__track">
-        <span>React ✦ TypeScript ✦ C# ✦ .NET ✦ Python ✦ Azure ✦ PyTorch ✦ TensorFlow ✦ Docker ✦ LLM Agents ✦ RAG ✦&nbsp;</span>
-        <span>React ✦ TypeScript ✦ C# ✦ .NET ✦ Python ✦ Azure ✦ PyTorch ✦ TensorFlow ✦ Docker ✦ LLM Agents ✦ RAG ✦&nbsp;</span>
+        <span>React ✦ TypeScript ✦ C# ✦ .NET ✦ Python ✦ FastAPI ✦ Azure ✦ Google Cloud ✦ PyTorch ✦ TensorFlow ✦ LLM Agents ✦ RAG ✦&nbsp;</span>
+        <span>React ✦ TypeScript ✦ C# ✦ .NET ✦ Python ✦ FastAPI ✦ Azure ✦ Google Cloud ✦ PyTorch ✦ TensorFlow ✦ LLM Agents ✦ RAG ✦&nbsp;</span>
       </div>
     </div>
 
@@ -85,7 +85,7 @@
           I'm a Computer Engineering student who likes building things end to end, from
           React front ends and .NET back ends to computer-vision models and LLM agent
           systems. My work spans professional software development, assistive-device
-          research, and a hackathon startup I co-built to connect surplus resources with
+          research, and an early-stage startup I co-built to connect surplus resources with
           the people who need them.
         </p>
       </div>
@@ -96,48 +96,6 @@
       <div class="container">
         <p class="section__num" aria-hidden="true">02</p>
         <h2 id="experience-heading">Experience</h2>
-
-        <article class="card card--featured" aria-labelledby="exp-bridge-heading">
-          <header class="card__header">
-            <h3 id="exp-bridge-heading">Bridge</h3>
-            <p class="card__meta">
-              <span class="badge">Featured · Startup</span>
-              Co-Founder and Full-Stack Developer · Hackathon project, deployed and live
-            </p>
-          </header>
-          <p>
-            A <strong>peer-to-peer donation platform</strong> that connects people with
-            surplus food and clothing to nearby people who need it, with volunteer drivers
-            handling delivery. No centralized drop-off, no fixed hours.
-          </p>
-          <ul>
-            <li>
-              Designed a three-role flow where <strong>helpers</strong> post donations,
-              <strong>people in need</strong> browse and request items, and
-              <strong>drivers</strong> accept nearby deliveries on demand. Each match gets a
-              <strong>live delivery tracker</strong> and a shared <strong>in-app chat</strong>,
-              so no one has to exchange phone numbers.
-            </li>
-            <li>
-              Removed the biggest friction in donating by letting helpers photograph an item
-              while <strong>Gemini Vision</strong> (<code>gemini-2.5-flash</code>)
-              auto-generates a structured list of item names, quantities, and sizes, turning
-              a <strong>2-minute</strong> chore into a <strong>10-second</strong> photo.
-            </li>
-            <li>
-              Built with a <strong>React 18 + TypeScript</strong> front end on Vite, a
-              <strong>FastAPI</strong> back end on <strong>Google Cloud Run</strong>
-              (Python 3.11), a <strong>Firestore</strong> database, <strong>Firebase</strong>
-              Auth, Storage, and Hosting, <strong>Leaflet</strong> and OSRM for maps and
-              routing, Nominatim for geocoding, and <strong>CI/CD</strong> through
-              <strong>GitHub Actions</strong>.
-            </li>
-          </ul>
-          <p class="card__links">
-            <a href="https://helper-495902.web.app" rel="noopener">Visit the live site</a> ·
-            <a href="https://github.com/alyanany97/bridge" rel="noopener">Team repository on GitHub</a>
-          </p>
-        </article>
 
         <article class="card" aria-labelledby="exp-brock-heading">
           <header class="card__header">
@@ -176,6 +134,48 @@
         <h2 id="projects-heading">Projects</h2>
 
         <div class="card-grid">
+          <article class="card card--featured" aria-labelledby="proj-bridge-heading">
+            <header class="card__header">
+              <h3 id="proj-bridge-heading">Bridge</h3>
+              <p class="card__meta">
+                <span class="badge">Early-stage startup</span>
+                Co-Founder and Full-Stack Developer · Deployed and live
+              </p>
+              <p class="card__tags">TypeScript · React · FastAPI · Python · Google Cloud Run · Gemini Vision</p>
+            </header>
+            <p>
+              A <strong>peer-to-peer donation platform</strong> that connects people with
+              surplus food and clothing to nearby people who need it, with volunteer drivers
+              handling delivery. No centralized drop-off, no fixed hours.
+            </p>
+            <ul>
+              <li>
+                Co-developing a <strong>3-role</strong> platform where <strong>helpers</strong>
+                post donations, <strong>people in need</strong> browse and request items, and
+                <strong>drivers</strong> accept nearby deliveries on demand. Each match gets
+                <strong>live delivery tracking</strong> through <strong>Leaflet</strong> and
+                <strong>OSRM</strong> plus a shared <strong>in-app chat</strong>, so no one has
+                to exchange phone numbers.
+              </li>
+              <li>
+                Integrated <strong>Gemini Vision</strong> (<code>gemini-2.5-flash</code>) to turn
+                a donation photo into a structured item list with names, quantities, and sizes,
+                cutting listing time from <strong>minutes to seconds</strong>.
+              </li>
+              <li>
+                Built with a <strong>React</strong> and <strong>TypeScript</strong> front end on
+                Vite, a <strong>FastAPI</strong> back end in <strong>Python</strong> deployed to
+                <strong>Google Cloud Run</strong>, <strong>Firebase Auth</strong> and
+                <strong>Firestore</strong>, and <strong>CI/CD</strong> through
+                <strong>GitHub Actions</strong>.
+              </li>
+            </ul>
+            <p class="card__links">
+              <a href="https://helper-495902.web.app" rel="noopener">Visit the live site</a> ·
+              <a href="https://github.com/alyanany97/bridge" rel="noopener">Team repository on GitHub</a>
+            </p>
+          </article>
+
           <article class="card" aria-labelledby="proj-ums-heading">
             <header class="card__header">
               <h3 id="proj-ums-heading">University Management System</h3>
@@ -213,22 +213,24 @@
           <div class="skills-group">
             <h3>Languages</h3>
             <ul class="pill-list">
-              <li>TypeScript</li><li>JavaScript</li><li>C#</li><li>Python</li>
-              <li>Java</li><li>C</li><li>C++</li><li>SQL</li>
+              <li>TypeScript</li><li>C#</li><li>Python</li><li>Java</li>
+              <li>SQL</li><li>JavaScript</li><li>C</li><li>C++</li>
             </ul>
           </div>
           <div class="skills-group">
             <h3>Frameworks &amp; Libraries</h3>
             <ul class="pill-list">
-              <li>React</li><li>.NET</li><li>PyTorch</li><li>TensorFlow</li>
-              <li>YOLOv8</li><li>JavaFX</li><li>Unity</li>
+              <li>React</li><li>.NET</li><li>FastAPI</li><li>PyTorch</li>
+              <li>TensorFlow</li><li>YOLOv8</li><li>Gemini Vision</li>
+              <li>JavaFX</li><li>Unity</li>
             </ul>
           </div>
           <div class="skills-group">
             <h3>Cloud &amp; Tools</h3>
             <ul class="pill-list">
-              <li>Azure SQL Database</li><li>Azure DevOps</li><li>CI/CD</li>
-              <li>Docker</li><li>Git</li><li>GitHub</li><li>REST APIs</li>
+              <li>Azure SQL Database</li><li>Azure DevOps</li>
+              <li>Google Cloud Run</li><li>CI/CD</li><li>Docker</li>
+              <li>Git</li><li>GitHub</li><li>REST APIs</li>
               <li>Firebase / Firestore (NoSQL)</li>
             </ul>
           </div>
@@ -270,11 +272,11 @@
         <ul class="plain-list">
           <li>
             <h3>Islamic Relief at UofG</h3>
-            <p>Created marketing content and coordinated charity events to raise awareness and funds for humanitarian causes.</p>
+            <p>Created marketing content and coordinated campus charity fundraising events.</p>
           </li>
           <li>
             <h3>Focus On Engineering Guelph</h3>
-            <p>Built and maintained a <strong>textbook rental website</strong> and helped organize engineering competitions, improving resource accessibility for students.</p>
+            <p>Built and maintained a <strong>textbook rental website</strong> and ran engineering competitions.</p>
           </li>
         </ul>
       </div>
