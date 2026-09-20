@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aryan Ashraf | Computer Engineering Student &amp; Software Developer</title>
-  <meta name="description" content="Portfolio of Aryan Ashraf, an incoming 4th-year Computer Engineering student at the University of Guelph. Full-stack and applied-ML developer with co-op experience, LLM agent systems, and a startup called Bridge.">
+  <meta name="description" content="Portfolio of Aryan Ashraf, a fourth-year Computer Engineering student at the University of Guelph. Full-stack and applied-ML developer with co-op experience, LLM agent systems, and a startup called Bridge.">
   <meta property="og:title" content="Aryan Ashraf | Computer Engineering Student &amp; Software Developer">
   <meta property="og:description" content="Full-stack and applied-ML developer with co-op experience building customer-facing platforms, REST APIs, and LLM agent systems. Co-founder of Bridge.">
   <meta property="og:type" content="website">
@@ -53,10 +53,10 @@
                 stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
         </svg>
         <p class="hero__lede">
-          Incoming 4th-year Computer Engineering (Honours) student at the University of
-          Guelph, starting September 2026. Full-stack and applied-ML developer with co-op
-          experience building customer-facing platforms, REST APIs, and LLM agent systems.
-          Interested in AI, cloud infrastructure, and software that solves real problems.
+          Fourth-year Computer Engineering (Honours) student at the University of Guelph.
+          Full-stack and applied-ML developer with co-op experience building customer-facing
+          platforms, REST APIs, and LLM agent systems. Interested in AI, cloud
+          infrastructure, and software that solves real problems.
         </p>
         <ul class="hero__actions">
           <li><a class="button button--primary" href="assets/Ashraf_Aryan_F26.pdf" target="_blank" rel="noopener">View Resume <span class="visually-hidden">(PDF, opens in a new tab)</span></a></li>
@@ -100,15 +100,15 @@
         <article class="card" aria-labelledby="exp-brock-heading">
           <header class="card__header">
             <h3 id="exp-brock-heading">Brock Solutions</h3>
-            <p class="card__meta">Software Developer Intern · Kitchener, ON · April 2026 to Present</p>
-            <p class="card__tags">TypeScript · React · C# · .NET · Azure · LLM Agents</p>
+            <p class="card__meta">Software Developer Intern · Kitchener, ON · April 2026 to September 2026</p>
+            <p class="card__tags">TypeScript · C# · LLM Agents · React · .NET</p>
           </header>
           <ul>
-            <li>Developed <strong>10 REST API endpoints</strong> in <strong>C#/.NET</strong> with <strong>token-based authentication</strong> and account-scoped authorization, serving <strong>10+ airline clients</strong> through a customer-facing portal on <strong>Azure SQL Database</strong>.</li>
-            <li>Delivered a <strong>full-stack</strong> support module in <strong>React</strong> with <strong>TypeScript</strong> and <strong>.NET</strong>, featuring cascading, context-aware dropdowns that streamlined case intake and reduced data-entry errors.</li>
-            <li>Built <strong>REST API integrations</strong> with <strong>ServiceNow</strong>, syncing case and support ticket data for client users.</li>
-            <li>Authored <strong>40 unit and integration tests</strong> across <strong>12 endpoints</strong> covering authentication, access control, and entity validation, run in <strong>Azure DevOps CI/CD</strong> pipelines to catch regressions.</li>
-            <li>Architected a <strong>multi-agent LLM system</strong> with <strong>retrieval-augmented generation (RAG)</strong>, using an orchestrator that directs <strong>5 subagents</strong> to retrieve context across <strong>4 internal repositories</strong> and automate <strong>cross-repo analysis</strong> and planning.</li>
+            <li>Built <strong>10 REST API endpoints</strong>, <strong>.NET BFF controllers</strong>, and a <strong>React</strong> client in <strong>TypeScript</strong> for a <strong>ServiceNow</strong> case-management portal with <strong>OAuth2</strong> and account-scoped authorization for <strong>10+ airline clients</strong>.</li>
+            <li>Shipped <strong>20+ pull requests</strong> across <strong>5 repositories</strong> and <strong>2 source control systems</strong>, including a config-driven <strong>integration suite</strong> exercising live <strong>ServiceNow REST APIs</strong>.</li>
+            <li>Designed a <strong>KPI trending dashboard</strong> for an airport <strong>baggage-handling platform</strong> covering <strong>10 metrics</strong> across <strong>7 time ranges</strong>, adding conditional <strong>T-SQL</strong> time bucketing to <strong>7 .NET metric sources</strong>.</li>
+            <li>Cut <strong>dashboard load latency</strong> by deduplicating repeated metric queries and parallelizing them under a <strong>semaphore capped at 8</strong>, validated with <strong>7 dedup and concurrency tests</strong> in <strong>Azure DevOps CI/CD</strong>.</li>
+            <li>Architected a <strong>multi-agent LLM system</strong> with <strong>retrieval-augmented generation (RAG)</strong>, using an orchestrator over <strong>5 subagents</strong> across <strong>4 internal repositories</strong> to automate <strong>cross-repo analysis</strong>.</li>
           </ul>
         </article>
 
@@ -119,7 +119,7 @@
             <p class="card__tags">C · C# · SQL · Unity · Firestore</p>
           </header>
           <ul>
-            <li>Debugged and extended <strong>C#</strong> logic in <strong>Unity</strong> for a <strong>VR mirror-therapy</strong> app, managing a <strong>Firestore</strong> back end that stored, synced, and retrieved patient movement and session data across devices.</li>
+            <li>Debugged and extended <strong>C#</strong> logic in <strong>Unity</strong> for a <strong>VR mirror-therapy</strong> app, storing <strong>200+ exercise data points</strong> in <strong>Firestore</strong> and charting progress trends in <strong>Excel</strong> to track patient improvement.</li>
             <li>Maintained <strong>Arduino (C)</strong> firmware for an <strong>arthritis rehabilitation glove</strong>, integrating sensors, <strong>real-time control logic</strong>, and breadboard wiring, with stable operation validated across <strong>20+ participants</strong>.</li>
             <li>Analyzed <strong>100+</strong> temperature sensor readings for a diabetic sock project in <strong>SQL</strong> and <strong>Excel</strong>, building trend visualizations and applying <strong>Isolation Forest</strong> anomaly detection to flag abnormal patterns.</li>
           </ul>
@@ -150,24 +150,19 @@
             </p>
             <ul>
               <li>
-                Co-developing a <strong>3-role</strong> platform where <strong>helpers</strong>
-                post donations, <strong>people in need</strong> browse and request items, and
-                <strong>drivers</strong> accept nearby deliveries on demand. Each match gets
-                <strong>live delivery tracking</strong> through <strong>Leaflet</strong> and
-                <strong>OSRM</strong> plus a shared <strong>in-app chat</strong>, so no one has
-                to exchange phone numbers.
+                Co-developing a <strong>full-stack donation platform</strong> as an
+                <strong>early-stage startup</strong> built at a <strong>24-hour hackathon</strong>,
+                pairing a <strong>React</strong> and <strong>TypeScript</strong> front end styled
+                with <strong>Tailwind</strong> against <strong>31 FastAPI endpoints</strong> on
+                <strong>Google Cloud Run</strong>, backed by <strong>Firestore</strong> and
+                <strong>Firebase Auth</strong> across <strong>3 user roles</strong>.
               </li>
               <li>
-                Integrated <strong>Gemini Vision</strong> (<code>gemini-2.5-flash</code>) to turn
-                a donation photo into a structured item list with names, quantities, and sizes,
-                cutting listing time from <strong>minutes to seconds</strong>.
-              </li>
-              <li>
-                Built with a <strong>React</strong> and <strong>TypeScript</strong> front end on
-                Vite, a <strong>FastAPI</strong> back end in <strong>Python</strong> deployed to
-                <strong>Google Cloud Run</strong>, <strong>Firebase Auth</strong> and
-                <strong>Firestore</strong>, and <strong>CI/CD</strong> through
-                <strong>GitHub Actions</strong>.
+                Built <strong>live delivery tracking</strong> with <strong>Leaflet</strong> and
+                <strong>OSRM</strong> routing plus a shared <strong>in-app chat</strong>, and
+                integrated <strong>Gemini Vision</strong> (<code>gemini-2.5-flash</code>) to turn
+                a donation photo into a structured item list, cutting listing time from about
+                <strong>2 minutes</strong> to under <strong>10 seconds</strong>.
               </li>
             </ul>
             <p class="card__links">
@@ -221,24 +216,24 @@
             <h3>Frameworks &amp; Libraries</h3>
             <ul class="pill-list">
               <li>React</li><li>.NET</li><li>FastAPI</li><li>PyTorch</li>
-              <li>TensorFlow</li><li>YOLOv8</li><li>Gemini Vision</li>
-              <li>JavaFX</li><li>Unity</li>
+              <li>TensorFlow</li><li>YOLOv8</li><li>Gemini Vision</li><li>Unity</li>
             </ul>
           </div>
           <div class="skills-group">
             <h3>Cloud &amp; Tools</h3>
             <ul class="pill-list">
               <li>Azure SQL Database</li><li>Azure DevOps</li>
-              <li>Google Cloud Run</li><li>CI/CD</li><li>Docker</li>
-              <li>Git</li><li>GitHub</li><li>REST APIs</li>
-              <li>Firebase / Firestore (NoSQL)</li>
+              <li>Google Cloud Run</li><li>CI/CD</li><li>Docker</li><li>Linux</li>
+              <li>Git</li><li>GitHub</li><li>REST APIs</li><li>SQL Server</li>
+              <li>xUnit</li><li>Firebase / Firestore (NoSQL)</li>
             </ul>
           </div>
           <div class="skills-group">
             <h3>Concepts &amp; Practices</h3>
             <ul class="pill-list">
               <li>Unit &amp; Integration Testing</li><li>Code Review</li>
-              <li>Data Structures &amp; Algorithms</li><li>Object-Oriented Programming</li>
+              <li>Agile / Scrum</li><li>Data Structures &amp; Algorithms</li>
+              <li>Object-Oriented Programming</li>
               <li>LLM / Agent Systems</li><li>RAG</li><li>Computer Vision</li>
               <li>Anomaly Detection (Isolation Forest)</li>
             </ul>
@@ -258,7 +253,7 @@
             <p class="card__meta">Bachelor of Engineering in Computer Engineering (Honours) · Guelph, ON · Expected April 2028</p>
           </header>
           <ul>
-            <li>Relevant coursework includes Data Structures and Algorithms in <strong>C</strong>, Digital Systems Design (<strong>FPGA</strong>, <strong>VHDL</strong>, Vivado, logic circuits), and Programming for Engineers (<strong>Java</strong>, <strong>C++</strong>).</li>
+            <li>Relevant coursework includes <strong>Data Structures and Algorithms</strong>, <strong>Object-Oriented Programming</strong>, and <strong>Autonomous Systems &amp; Robotics</strong>.</li>
           </ul>
         </article>
       </div>
@@ -270,6 +265,10 @@
         <p class="section__num" aria-hidden="true">06</p>
         <h2 id="extracurricular-heading">Extracurricular</h2>
         <ul class="plain-list">
+          <li>
+            <h3>UofG Robotics Team</h3>
+            <p>Cut rover joystick-to-motor latency by replacing <strong>ROS2</strong> layers with direct <strong>C++</strong> <strong>UDP</strong> and <strong>CAN bus</strong> communication.</p>
+          </li>
           <li>
             <h3>Islamic Relief at UofG</h3>
             <p>Created marketing content and coordinated campus charity fundraising events.</p>
@@ -294,7 +293,7 @@
       </p>
       <ul class="contact-list">
         <li><a href="mailto:aashra02@uoguelph.ca">aashra02@uoguelph.ca</a></li>
-        <li><a href="tel:+12263323297">226-332-3297</a></li>
+        <li><a href="tel:+12263323297">+1 (226) 332-3297</a></li>
         <li><a href="https://github.com/Aryan-a-a" rel="noopener">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/aryanaashraf/" rel="noopener">LinkedIn</a></li>
         <li><a href="assets/Ashraf_Aryan_F26.pdf" target="_blank" rel="noopener">Resume <span class="visually-hidden">(PDF, opens in a new tab)</span></a></li>
