@@ -1,16 +1,47 @@
 /* Progressive enhancement only — the site is fully usable without this file.
  *
- * 1. Mobile nav toggle: without JS the button stays [hidden] and the nav
+ * 1. Theme toggle: the button ships [hidden] and is un-hidden here, so no-JS
+ *    visitors never see a dead control and simply get the light theme.
+ * 2. Mobile nav toggle: without JS the button stays [hidden] and the nav
  *    list is always visible. With JS, below 720px the list collapses behind
  *    a button exposing state via aria-expanded / aria-controls.
- * 2. Scroll-reveal: sections/cards fade up as they enter the viewport.
+ * 3. Scroll-reveal: sections/cards fade up as they enter the viewport.
  *    The hidden initial state is CSS-gated on html.js AND
  *    prefers-reduced-motion: no-preference, so content can never be stuck
  *    invisible for no-JS or reduced-motion users.
- * 3. Active-section nav highlight while scrolling.
+ * 4. Active-section nav highlight while scrolling.
  */
 (function () {
   "use strict";
+
+  /* ---- Theme toggle ---------------------------------------------------
+   * The inline script in <head> already picked the theme. This only wires
+   * up the control, un-hides it, and remembers an explicit choice. */
+
+  var themeToggle = document.querySelector(".theme-toggle");
+
+  if (themeToggle) {
+    var root = document.documentElement;
+    themeToggle.hidden = false;
+
+    var applyTheme = function (theme, remember) {
+      root.setAttribute("data-theme", theme);
+      themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
+      if (remember) {
+        try {
+          localStorage.setItem("theme", theme);
+        } catch (e) {}
+      }
+    };
+
+    // Sync aria-pressed with whatever the head script chose. Not stored, so a
+    // visitor who never clicks keeps following their OS preference.
+    applyTheme(root.getAttribute("data-theme") === "dark" ? "dark" : "light", false);
+
+    themeToggle.addEventListener("click", function () {
+      applyTheme(root.getAttribute("data-theme") === "dark" ? "light" : "dark", true);
+    });
+  }
 
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
