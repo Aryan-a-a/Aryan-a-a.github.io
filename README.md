@@ -1,5 +1,7 @@
 # Aryan Ashraf — Personal Portfolio
 
+**Live at [aryanashraf.com](https://aryanashraf.com)**
+
 A single-page portfolio built with plain HTML and CSS and ~40 lines of optional
 JavaScript. No frameworks, no build step, no external dependencies.
 
@@ -15,13 +17,18 @@ python -m http.server 8000
 
 ## Deploy
 
-The site is fully static. Upload the folder as-is to any static host
-(GitHub Pages, Netlify, Cloudflare Pages, Firebase Hosting…). No build step.
+Hosted on GitHub Pages from `main`, with the custom domain set by the `CNAME`
+file (do not delete it). A `git push` redeploys. The old
+`aryan-a-a.github.io` URL 301-redirects to the custom domain.
+
+The site is fully static, so it can also go on any static host
+(Netlify, Cloudflare Pages, Firebase Hosting…). No build step.
 
 ## Structure
 
 ```
 index.html           # the whole site (single page)
+CNAME                # custom domain for GitHub Pages (do not delete)
 styles/main.css      # all styles; palette & spacing as CSS custom properties
 scripts/main.js      # mobile nav toggle only — progressive enhancement
 assets/
