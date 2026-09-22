@@ -32,7 +32,7 @@ CNAME                # custom domain for GitHub Pages (do not delete)
 styles/main.css      # all styles; palette & spacing as CSS custom properties
 scripts/main.js      # mobile nav toggle only — progressive enhancement
 assets/
-  Ashraf_Aryan_F26.pdf   # résumé, linked from hero + footer
+  Aryan_Ashraf_Resume.pdf   # résumé, linked from hero + footer
   favicon.svg            # "AA" monogram
 ```
 
